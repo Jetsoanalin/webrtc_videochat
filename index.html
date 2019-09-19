@@ -91,11 +91,11 @@
             <section class="experiment">
                 <section>
                     <span>
-                        Private ?? <a href="/video-conferencing/" target="_blank" title="Open this link in new tab. Then your conference room will be private!"><code><strong id="unique-token">#123456789</strong></code></a>
+                        Private ?? <a href="/video-conferencing/" target="_blank" title="Open this link in new tab. Then your chat will be private!"><code><strong id="unique-token">#123456789</strong></code></a>
                     </span>
 
-                    <input type="text" id="conference-name" placeholder="Conference Name" style="width: 50%;">
-                    <button id="setup-new-room" class="setup">Setup New Conference</button>
+                    <input type="text" id="conference-name" placeholder="Your Name" style="width: 50%;">
+                    <button id="setup-new-room" class="setup">Setup New Video Call</button>
                 </section>
 
                 <!-- list of all available conferencing rooms -->
@@ -155,7 +155,7 @@
                         if (typeof roomsList === 'undefined') roomsList = document.body;
 
                         var tr = document.createElement('tr');
-                        tr.innerHTML = '<td><strong>' + room.roomName + '</strong> shared a conferencing room with you!</td>' +
+                        tr.innerHTML = '<td><strong>' + room.roomName + '</strong> shared a connection with you!</td>' +
                             '<td><button class="join">Join</button></td>';
                         roomsList.appendChild(tr);
 
