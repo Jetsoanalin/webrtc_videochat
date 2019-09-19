@@ -1,0 +1,20 @@
+{
+  "name": "video-conferencing",
+  "version": "1.0.0",
+  "description": "video chat for timeswappers",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jetsoanalin/webrtc_videochat.git"
+  },
+  "author": "jetso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jetsoanalin/webrtc_videochat/issues"
+  },
+  "homepage": "https://github.com/Jetsoanalin/webrtc_videochat#readme"
+}
