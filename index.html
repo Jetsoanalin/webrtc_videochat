@@ -141,7 +141,13 @@
                             buttons: ['mute-audio', 'mute-video', 'full-screen', 'volume-slider']
                         });
                         mediaElement.id = media.stream.streamid;
+                      
+                      if(videosContainer.childElementCount <3)
+                      {
                         videosContainer.appendChild(mediaElement);
+                      }
+                        
+                        
                     },
                     onRemoteStreamEnded: function(stream, video) {
                         if (video.parentNode && video.parentNode.parentNode && video.parentNode.parentNode.parentNode) {
@@ -149,6 +155,7 @@
                         }
                     },
                     onRoomFound: function(room) {
+                        console.log("room details: ",room);
                         var alreadyExist = document.querySelector('button[data-broadcaster="' + room.broadcaster + '"]');
                         if (alreadyExist) return;
 

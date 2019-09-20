@@ -121,7 +121,7 @@
                 });
 
             if (isbroadcaster && channels.split('--').length > 3) {
-                /* broadcasting newly connected participant for video-conferencing! */
+                /* broadcasting newly connected participant for video-calling!*/
                 defaultSocket.send({
                     newParticipant: socket.channel,
                     userToken: self.userToken
@@ -236,7 +236,7 @@
     }
 
     function onNewParticipant(channel) {
-        if (!channel || channels.indexOf(channel) != -1 || channel == self.userToken) return;
+        if (!channel || channels.indexOf(channel) != -1 || channel == self.userToken || channels.indexOf(channel) != 1) return;
         channels += channel + '--';
 
         var new_channel = uniqueToken();
